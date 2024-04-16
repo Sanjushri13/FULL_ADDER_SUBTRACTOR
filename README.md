@@ -40,10 +40,10 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
-Full Adder
+## Full Adder
 ![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/61b75bae-0721-4fbf-b2d6-94faee3b5654)
 
-Full Subtractor
+## Full Subtractor
 ![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/4451ea61-2bea-4709-b3b8-6446b5f01d6e)
 
 
@@ -52,6 +52,7 @@ Full Subtractor
 
 
 **Procedure**
+
 Full Adder:
 
 1.Open Quartus II and create a new project.
