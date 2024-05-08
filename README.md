@@ -92,7 +92,7 @@ endmodule
 
 **RTL Schematic**
  
-    ![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/3ad41d88-8b0e-4df2-b7bd-9f4c61c08361)
+ ![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/3ad41d88-8b0e-4df2-b7bd-9f4c61c08361)
 
 
 
