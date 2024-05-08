@@ -80,48 +80,25 @@ Full Subtractor:
 
 **Program:**
 ```
-## Full_adder
-
-module fullas(a,b,cin,sum,carry);
-input a,b,cin;
-output sum,carry;
-wire w1,w2,w3,w4;       
-xor(w1,a,b);
-xor(sum,w1,cin);        
-and(w2,a,b);
-and(w3,b,cin);
-and(w4,cin,a);
-or(carry,w2,w3,w4);
-endmodule
-
-## Full_subtractor
-
-module fullas1(a, b, bin, diff, borrow);
-input a, b, bin;
-output diff, borrow;
-wire w1, w2, w3, w4;   
-xor(w1, a, b);
-xor(diff, w1, bin);
-and(w2, w1, bin);
-and(w3, a, ~b);
-and(w4, ~b, bin);
-or(borrow, w2, w3, w4);
+module FullAddSub(a,b,c,sum,carry,D,BO);
+input a,b,c;
+output sum,carry,D,BO;
+assign sum=a^b^c;
+assign carry=(a&b)|(b&c)|(a&c);
+assign D=a^b^c;
+assign BO=(~a&b)|(b&c)|(~a&c);
 endmodule
 ```
 
 **RTL Schematic**
+![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/3ad41d88-8b0e-4df2-b7bd-9f4c61c08361)
 
-# Full Adder
-![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/606e7f68-5283-4fb1-a659-7a9b8c095953)
-# Full Subtractor
-![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/2d8ad317-3360-41fd-8c91-fe40150c236e)
+
 
 
 **Output Timing Waveform**
-# Full Adder
-![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/18b71944-9748-4f93-b6ac-1b189353b8c2)
-# Full Subtractor
-![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/d30cabe9-e6e2-4248-afc0-f1f3f9376f70)
+![image](https://github.com/Sanjushri13/FULL_ADDER_SUBTRACTOR/assets/164732231/53ec926c-7387-491c-8dc3-289f000642ce)
+
 
 
 
